@@ -21,17 +21,4 @@ router.delete("/meralco-bills", meralco_billsControllers.deleteUser);
 
 
 
-//GET Search by Name
-router.get("/meralco-bills/:Name", meralco_billsControllers.getUserbyName)
-
-// GET - Filter by Payment Status
-router.get(
-  "/meralco-bills/status/:status",meralco_billsControllers.filterByStatus);
-
-  //Get Sort by amount
-router.get("/meralco-bills/sort/amount", meralco_billsControllers.sortByAmount );
-//Get TOTAL AMOUNT DUE
-router.get("/meralco-bills/calculate/total",meralco_billsControllers.calculateTotal);
-
-
 module.exports = router;
